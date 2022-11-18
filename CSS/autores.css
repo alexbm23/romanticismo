@@ -1,0 +1,92 @@
+/*******************************************************************************************/
+/* Web del romanticismo                                                                    */
+/* Hoja de estilo para autores                                                             */
+/* Autor Alejandro Barnestein Martos                                                       */
+/* Versión 1.0                                                                             */
+/* 21 Octubre 2022                                                                         */
+/*******************************************************************************************/
+
+/*  ESTILO GENERAL                                                                         */
+
+@font-face {
+    src: url('../fonts/FuzzyBubbles-Regular.ttf');
+    font-family: titulos;
+}
+
+@font-face {
+    src: url('../fonts/NunitoSans-Light.ttf');
+    font-family: textos;
+}
+
+* {box-sizing:border-box;} /* En width debe cortar desde el borde hacia adentro */
+
+body {
+    margin:0;padding:0; /* Para quitar el fondillo azul del navegador*/
+    font-family: textos;
+    text-indent:1em;
+    /* margin:0px 3% auto; no necesito margin/padding en un layout */ 
+    background-color: rgb(200, 238, 238);
+    
+}
+
+#wrapper {
+            background-color: white;
+            width:80%;
+            margin:auto;
+            padding:2%;
+}
+
+h1,h2,h3 {
+    font-family: titulos;
+    text-align:center;
+    margin:30px auto;
+    padding-bottom:40px;
+    border-bottom:solid 3px black;
+}
+
+#espronceda {
+    float:left; /*Esta regla de estilo es exclusiva para que la imagen tenga el texto alrededor */
+    padding: 10px;
+    width:30%;
+}
+
+#limpiar {clear:both;}
+
+p {
+    text-align: justify;
+    margin: 10px;
+    padding:0 1%;
+
+}
+
+a {
+    text-decoration:none;
+    color:grey;
+
+}
+
+a:hover{
+    color:lightgrey;
+}
+
+/******** MEDIA QUERIES ********/
+
+
+/******** para tablet **********/
+@media only screen and (width<=900px){
+    #espronceda {
+        width:50%;
+    }
+}
+
+
+/******** para móvil ************/
+
+@media only screen and (width<=500px){
+    #espronceda {
+        width:100%;
+    }
+    #wrapper {
+        width:100%;
+    }
+}

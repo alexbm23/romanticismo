@@ -1,0 +1,60 @@
+/**********************************************************************/
+/* web del romanticismo                                               */
+/* Hoja de estilo de la canción del Pirata                            */
+/* Autor: Alejandro Barnestein Martos                                 */
+/* versión 2.0                                                        */
+/**********************************************************************/
+
+/************** ESTILO GENERAL  ***************************************/
+
+@font-face {
+    font-family: escritura;
+    src: url('../fonts/Handlee-Regular.ttf');
+    
+}
+
+body {font-family: escritura;
+/* vamos a colocar una foto sola de fondo */
+    background-image:url(../imagenes/photo-background/arr.jpg) ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color:#FDF8CA;
+}
+
+#poema {
+    margin-left:80%;
+    height:100vh;
+    background-color: rgba(0, 0, 0, 0.281);
+    border:solid 2px #FDF8CA;
+    padding-left:2%;
+}
+
+.fa {font-size:200% !important;}
+.fa-twitter-square {color:#55ACEE}
+.fa-facebook-square {color:#3B5998}
+.fa-instagram {color:#c13584}
+.fa-youtube-square {color:#c4302b}
+
+a {
+    text-decoration:none;
+    color:#57371D;
+}
+
+/** pseudoclase como selector :hover que quiere decir ratón encima **/
+
+a:hover{
+    color:#644D3B;
+}
+
+/********* MEDIA QUERIES ***********/
+
+@media only screen and (width<=800px){
+    #poema {color:#FDF8CA;
+            margin-left:5%;
+            margin-right: 40%;
+            
+            
+
+    }
+
+}

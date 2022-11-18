@@ -1,0 +1,32 @@
+/**********************************************************************/
+/* web del romanticismo                                               */
+/* Hoja de estilo de la canción del Pirata                            */
+/* Autor: Alejandro Barnestein Martos                                 */
+/* versión 1.0                                                        */
+/**********************************************************************/
+
+/************** ESTILO GENERAL  ***************************************/
+@font-face {
+    font-family: escritura;
+    src: url('../fonts/Handlee-Regular.ttf');
+}
+
+body {
+    font-family:escritura;
+    font-size: 1.17em;
+    background-image: url('../imagenes/backgrounds/imgfondo.jpg');
+    background-repeat:repeat-y;
+    background-color:#A7D3EC;
+    background-size: 30%;
+    background-position:left;
+    color:#0F7C9D;
+    
+}
+
+#poema {
+    background-color: #f3f7e8c7;
+    width: 25%;
+    margin-left:31%;
+    border:2px solid #0F7C9D;
+    text-align: center;
+}
