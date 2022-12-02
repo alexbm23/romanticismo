@@ -5,23 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romanticismo - Inicio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="./CSS/index.css"> 
     <link rel="shortcut icon" href="./imagenes/favicon.png" type="image/x-icon">
+    <script src="./JS/funciones.js"></script>
     <!-- Enlace a la hoja de estilo de index-->
+    <!-- Add icon library -->
+
 </head>
 <body>
     <!-- div#wrapper>nav+section*4+footer -->
     <div id="wrapper">
         <nav>
-Aquí va la la barra de navegacion 
-        </nav>
-<!--- HERO VERSION 1: FOTO + TEXTO
+                <div class="topnav" id="myTopnav">
+                        <a href="#" class="active">Inicio</a>
+                        <a href="#intro">Introducción</a>
+                        <a href="#ideas">Ideas</a>
+                        <a href="#autores">Autores</a>
+                        <a href="#galeria">Galería</a>
+                        <a href="#contacto">Contacto</a>
+                        <!-- El último botón es especial, se desactiva su "href" para que no mande a ningún sitio, a cambio es manipulado por un javascript que hace que se oculte cuando nlos demás botones esten a la vista y se muestre cuando los botones se oculten . Aparece solo cuando la pantalla sea estrecha-->
+                        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+                          <i class="fa fa-bars"></i>
+                        </a>
+                      </div>
+                      </nav>
+ <!--HERO VERSION 1: FOTO + TEXTO-->
 
         <section id="hero">
         <div id="titulo">Romanticismo<br>literario</div>
 
         </section>
--->
+
 
 <!--  HERIO VERSION 2: HAIKEI + POSITION + FROSTED GLASS
         <section id="hero2">
@@ -30,6 +45,8 @@ Aquí va la la barra de navegacion
         </div>   
         </section>
 -->
+
+<!--
         <section id="hero3">
                 <div id="titulo3">
                         Romanticismo<br>literario
@@ -37,21 +54,154 @@ Aquí va la la barra de navegacion
         </section>
         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#a2d9ff" fill-opacity="1" d="M0,160L24,144C48,128,96,96,144,85.3C192,75,240,85,288,101.3C336,117,384,139,432,149.3C480,160,528,160,576,133.3C624,107,672,53,720,69.3C768,85,816,171,864,170.7C912,171,960,85,1008,85.3C1056,85,1104,171,1152,186.7C1200,203,1248,149,1296,144C1344,139,1392,181,1416,202.7L1440,224L1440,0L1416,0C1392,0,1344,0,1296,0C1248,0,1200,0,1152,0C1104,0,1056,0,1008,0C960,0,912,0,864,0C816,0,768,0,720,0C672,0,624,0,576,0C528,0,480,0,432,0C384,0,336,0,288,0C240,0,192,0,144,0C96,0,48,0,24,0L0,0Z"></path></svg>
 
-
+-->
         <section id="intro">
-Aquí van la introduccion
+                <div class="titulo-seccion">
+                Introducción
+                </div>
         </section>
         <section id="ideas">
-Aquí van las ideas principales
+                <div class="titulo-seccion">
+                Ideas principales
+                </div>
+<!-- Monto un contenedor grid-->         
+        <div id="grid2">
+<!-- Dntro monto 2 columnas-->
+                <div class="col2">
+                        <img src="./imagenes/hero section/nashu.jpg" alt="La balsa de la medusa">
+                </div>
+                <div class="col2 col-texto">
+                        <ul id="parte2">
+                                <li>Idea1 Lorem ipsum dolor sit amet, consectetur adipisicing elit. </li>
+                                <li>Idea2 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum </li>
+                                <li>Idea3 Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae laborum </li>
+                                <li>Idea4 Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                                <li>Idea5 Lorem ipsum dolor sit amet consectetur adipisicing</li>
+                        </ul>
+                </div>
+
+                <div class="col2 col-texto">
+                        <ul id="parte2">
+                                <li>Idea6 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum</li>
+                                <li>Idea7 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum</li>
+                                <li>Idea8 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum</li>
+                                <li>Idea9 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum</li>
+                                <li>Idea10 Lorem ipsum dolor sit amet consectetur, adipisicing elit. Earum</li>
+                        </ul>
+
+                </div>
+
+                <div class="col2">
+                        <img src="./imagenes/hero section/nashe.jpg" alt="nasheeeeeeeee"> 
+
+                </div>
+                
+        </div>
         </section>
         <section id="autores">
-Aquí van los autores principales 
-        </section>
-        
-        <footer>
-Redes sociales y otras cosas
+                <div class="titulo-seccion"> 
+                Autores principales
+                </div> 
+                <div id="grid4">
+                <div class="col4 col-texto2">
+                        <div class="card">
+                                <img src="./imagenes/Autores/jose-de-espronceda-09c233-1024.png" alt="Avatar" >
+                                <div class="container">
+                                  <h4><b>José de Espronceda</b></h4>
+                                  <p><a class="boton" href="./espronceda.html">Leer más</a></p>
+                                </div>
+                              </div>
+                </div>
+                <div class="col4 col-texto2">
+                        <div class="card">
+                                <img src="./imagenes/Autores/larra.png" alt="Avatar" >
+                                <div class="container">
+                                  <h4><b>Mariano José de Larra</b></h4>
+                                  <p><a class="boton" href="#autores"> Leer más</a></p>
+                                </div>
+                              </div>
+                </div>
 
+                <div class="col4 col-texto2">
+                        <div class="card">
+                                <img src="./imagenes/Autores/zorrilla.png" alt="Avatar" >
+                                <div class="container">
+                                  <h4><b>José Zorrilla y Moral</b></h4>
+                                  <p><a class="boton" href="#autores"> Leer más</a></p>
+                                </div>
+                              </div>.
+
+                </div>
+                <div class="col4 col-texto2">
+                        <div class="card">
+                                <img src="./imagenes/Autores/becquer.png" alt="Avatar" >
+                                <div class="container">
+                                  <h4><b>Gustavo Adolfo Becquer</b></h4>
+                                  <p><a class="boton" href="#autores"> Leer más</a></p>
+                                </div>
+                              </div>
+
+                </div>
+        </div>
+        </section>
+        <section id="galeria">
+                <div class="titulo-seccion"> 
+                        Galería
+                        </div> 
+        <!-- PEGO EL VIDEO A LO BASTO JEJE-->
+        <!-- Pasos: 1 voy a youtube y copio el iframe desde el "compartir" del video que elijamos, -->
+        <!-- 2 pegar en la página web y quito el width y el height, le añado la class responsive-iframe-->
+        <!-- 3 Lo meto en un div con la clase contenedor o container y pego el estilo css desde w3schools-->
+        <div class="contenedor">
+        <iframe class="responsive-iframe" src="https://www.youtube.com/embed/xubCM9EX0Os" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </div>
+        </section>
+        <section id="contacto">
+                <div class="titulo-seccion"> 
+                        Contacto
+                        </div> 
+        <!-- PONER UN GOOGLE MAPS-->
+        <div class="contenedor">
+        <iframe class="responsive-iframe" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d9043.26074844845!2d-4.556262485685528!3d36.7399577220648!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd72f1d06d8246c9%3A0xb6dccfba3e65a1f2!2sFP%20IES%20Campanillas%20PTA!5e0!3m2!1ses!2ses!4v1669972269241!5m2!1ses!2ses" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        </section>
+
+
+        <footer>
+        <div id="footwrap">
+        <div id="foot">
+        Redes sociales        
+        </div>        
+        <div id="grid3">
+        <div class="col5 ">
+                <img src="./imagenes/feather-xxl.png" alt="Imágen del logotipo">
+        </div>
+        <div class="col5 ">
+        <a href="#" class="enlace"> Inicio </a><br>
+        <a href="#intro" class="enlace"> Introducción</a> <br>
+        <a href="#ideas" class="enlace"> Ideas</a> <br>
+        <a href="#autores" class="enlace"> Autores</a> <br>
+        <a href="#" class="enlace"> Galería </a><br>
+        <a href="#" class="enlace"> Contacto </a>
+        
+
+        </div>
+        <div class="col5" id="columna3-50">
+                <p>Síguenos en Redes, Gustavo</p>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-google"></a>
+                <a href="#" class="fa fa-linkedin"></a>
+                <a href="#" class="fa fa-youtube"></a>
+                <a href="#" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-pinterest"></a>
+                <a href="#" class="fa fa-snapchat-ghost"></a>
+                <a href="#" class="fa fa-skype"></a>
+        </div>
+        </div>
+</div>
         </footer>
+        
     </div>
     
 </body>
