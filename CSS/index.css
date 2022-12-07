@@ -287,7 +287,14 @@ nav {
     height: 100%;
   }
 /******* GALERÍA****************/
-
+.grid3-iguales{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  text-align: center;
+}
+.col3-iguales{
+  padding: 3%;
+}
 .contenedor {
     position: relative;
     overflow: hidden;
@@ -306,6 +313,13 @@ nav {
     height: 100%;
   }
   
+/******** CONTACTO **************/
+
+.grid2-iguales{
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
 
 
 /*********FOOTER*****************/
@@ -468,7 +482,9 @@ nav {
     #grid3 {
         
         grid-template-columns: 50% 50%;}
-
+    .grid3-iguales{
+      grid-template-columns:auto auto ;
+    }
     
 }
 
@@ -479,4 +495,5 @@ nav {
         width:59%;
    
     }
+    .grid3-iguales{grid-template-columns: auto;}
 }
